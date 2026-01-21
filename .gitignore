@@ -1,55 +1,80 @@
-# Prerequisites
-*.d
+# =========================
+# .NET / C#
+# =========================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.vscode/
+.vscode/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Rider
+.idea/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# =========================
+# NuGet
+# =========================
+*.nupkg
+# packages/  # (si usas PackageReference, NO descomentar)
+# *.snupkg
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# =========================
+# Logs
+# =========================
+*.log
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# =========================
+# Test results
+# =========================
+TestResults/
+*.trx
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Secrets
+secrets.json
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# =========================
+# User-specific files
+# =========================
+*.rsuser
+*.userprefs
+*.suo
+*.user
 
-# debug information files
-*.dwo
+# =========================
+# OS files
+# =========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# =========================
+# Publish
+# =========================
+publish/

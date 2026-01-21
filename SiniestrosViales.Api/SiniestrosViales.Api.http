@@ -1,0 +1,22 @@
+@API = http://localhost:5007
+
+## Get Siniestros
+GET {{API}}/api/v1/siniestro
+Accept: application/json
+
+## Crear Siniestro
+POST {{API}}/api/v1/siniestro
+Content-Type: application/json
+{
+  "fechaHora": "2026-01-05T09:59:41.900Z",
+  "departamento": "Atlantico",
+  "ciudad": "Soledad",
+  "tipo": 1,
+  "vehiculos": 1,
+  "victimas": 1,
+  "descripcion": "N/A"
+}
+
+## Health Check
+GET {{API}}/health
+Accept: application/json

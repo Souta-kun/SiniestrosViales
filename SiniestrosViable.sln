@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiniestrosViales.Api", "SiniestrosViales.Api\SiniestrosViales.Api.csproj", "{BD97066F-39C3-45A4-9363-649A563412A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiniestrosViales.Application", "SiniestrosViales.Application\SiniestrosViales.Application.csproj", "{FD463B5B-CE7A-4F60-970A-BCB42BDE1339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiniestrosViales.Domain", "SiniestrosViales.Domain\SiniestrosViales.Domain.csproj", "{36723E16-BC92-4C08-8472-D341F26581A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiniestrosViales.Infrastructure", "SiniestrosViales.Infrastructure\SiniestrosViales.Infrastructure.csproj", "{DE3BCB00-A5F1-4299-B555-D796AC5890E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4C86492B-EDBA-4D45-9452-9A71D2F16661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiniestrosViales.Application.Tests", "Tests\SiniestrosViales.Application.Tests\SiniestrosViales.Application.Tests.csproj", "{6C790B3E-3883-4D21-8D13-23FE965E1BF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD97066F-39C3-45A4-9363-649A563412A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD97066F-39C3-45A4-9363-649A563412A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD97066F-39C3-45A4-9363-649A563412A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD97066F-39C3-45A4-9363-649A563412A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD463B5B-CE7A-4F60-970A-BCB42BDE1339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD463B5B-CE7A-4F60-970A-BCB42BDE1339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD463B5B-CE7A-4F60-970A-BCB42BDE1339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD463B5B-CE7A-4F60-970A-BCB42BDE1339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36723E16-BC92-4C08-8472-D341F26581A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36723E16-BC92-4C08-8472-D341F26581A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36723E16-BC92-4C08-8472-D341F26581A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36723E16-BC92-4C08-8472-D341F26581A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE3BCB00-A5F1-4299-B555-D796AC5890E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3BCB00-A5F1-4299-B555-D796AC5890E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3BCB00-A5F1-4299-B555-D796AC5890E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3BCB00-A5F1-4299-B555-D796AC5890E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C790B3E-3883-4D21-8D13-23FE965E1BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C790B3E-3883-4D21-8D13-23FE965E1BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C790B3E-3883-4D21-8D13-23FE965E1BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C790B3E-3883-4D21-8D13-23FE965E1BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C790B3E-3883-4D21-8D13-23FE965E1BF9} = {4C86492B-EDBA-4D45-9452-9A71D2F16661}
+	EndGlobalSection
+EndGlobal
