@@ -36,6 +36,9 @@ public class Siniestro
         if (victimas < 0)
             throw new ArgumentException("El número de víctimas no puede ser negativo.");
 
+        if (Enum.IsDefined(typeof(TipoSiniestro), tipo) == false)
+            throw new ArgumentException("El tipo de siniestro no es válido.");
+
         FechaHora = fechaHora;
         Departamento = departamento;
         Ciudad = ciudad;

@@ -19,12 +19,22 @@ public class ExceptionMiddleware
         }
         catch (Exception ex)
         {
-            context.Response.StatusCode = StatusCodes.Status500InternalServerError;
             context.Response.ContentType = "application/json";
-
-            await context.Response.WriteAsJsonAsync(
-                ApiResult.FailureResult("Internal Server Error. Por favor contacte al administrador.")
-            );
+            
+            if (ex is ArgumentException argEx)
+            {
+                context.Response.StatusCode = StatusCodes.Status400BadRequest;
+                await context.Response.WriteAsJsonAsync(
+                    ApiResult.FailureResult(argEx.Message)
+                );
+            }
+            else
+            {
+                context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+                await context.Response.WriteAsJsonAsync(
+                    ApiResult.FailureResult("Internal Server Error. Por favor contacte al administrador.")
+                );
+            }
         }
     }
 }
