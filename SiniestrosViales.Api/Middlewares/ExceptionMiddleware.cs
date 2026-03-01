@@ -11,6 +11,11 @@ public class ExceptionMiddleware
         _next = next;
     }
 
+    /// <summary>
+    /// Captura excepciones no manejadas y devuelve una respuesta JSON con el mensaje de error adecuado.
+    /// </summary>
+    /// <param name="context"></param>
+    /// <returns></returns>
     public async Task InvokeAsync(HttpContext context)
     {
         try
@@ -20,7 +25,7 @@ public class ExceptionMiddleware
         catch (Exception ex)
         {
             context.Response.ContentType = "application/json";
-            
+
             if (ex is ArgumentException argEx)
             {
                 context.Response.StatusCode = StatusCodes.Status400BadRequest;
